@@ -17,7 +17,7 @@
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border-radius: 2%
     }
-    #login>#btn-1{
+    #login>#form-1>#btn-1{
       font-size: 40px;
       margin-top: 60px;
       margin-bottom: 50px;
@@ -25,7 +25,7 @@
       border: none;
       font-weight: bold;
     }
-    #login>input{
+    #login>#form-1>input{
       border: none;
       background-repeat: no-repeat;
       margin-top: 25px;
@@ -35,11 +35,11 @@
       padding: 10px 10px 5px 0px;
       font-size: 17px;
     }
-    #login>hr{
+    #login>#form-1>hr{
       margin-top: 10px;
       width: 75%;
     }
-    #login>#btn-2{
+    #login>#form-1>#btn-2{
       margin-top: 30px;
       padding: 15px 125px 15px 125px;
       margin-bottom: 50px;
@@ -47,10 +47,10 @@
       color: white;
       background-image: linear-gradient(90deg,rgb(66, 138, 253),rgb(172, 75, 148));
     }
-    #login>h3{
+    #login>#form-1>h3{
       color: rgb(140, 140, 140);
     }
-    #login>h3>a{
+    #login>#form-1>h3>a{
       text-decoration: none;
       color: rgb(50, 106, 208);
     }
@@ -58,14 +58,16 @@
 </head>
 <body id="b">
   <div id="login">
-    <button id="btn-1">Login</button><br>
-    <input type="email" placeholder="Email"><br>
-    <hr>
-    <input type="password" placeholder="Password"><br>
-    <hr>
-    <button id="btn-2" type="submit">Login</button>
-    <h3>Forget <a href="">Password?</a></h3>
-    <h3>don't have an account? <a href="">Sign up</a></h3>
+      <form id="form-1" method="post">
+        <button id="btn-1">Login</button><br>
+        <input type="email" placeholder="Email"><br>
+        <hr>
+        <input type="password" placeholder="Password"><br>
+        <hr>
+          <button id="btn-2" type="submit">Login</button>
+        <h3>Forget <a href="">Password?</a></h3>
+        <h3>don't have an account? <a href="">Sign up</a></h3>
+    </form>
   </div>
 </body>
 </html>
